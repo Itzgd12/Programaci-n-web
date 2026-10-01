@@ -1,0 +1,85 @@
+* {
+    /* Para que el padding no me deforme las cajas */
+    box-sizing: border-box;
+}
+
+body {
+    /* Cambio el tipo de fuente*/
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    /* Modifico los margenes */
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    /* el contenedor centrado y con fondo blanco */
+    width: 450px;
+    margin: 50px auto;
+    background-color: white;
+    /* Espacio por dentro para que nada quede pegado */
+    padding: 30px;
+    /* Esquinas redondeadas */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+    /* Centro el título principal */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    /* Centro el texto  y las pongo en gris oscuro */
+    text-align: center;
+    color: #666;
+}
+
+.formulario {
+    /*Para que los campos queden uno debajo del otro */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    /* Separo un poco los textos de nombre, edad, etc., y lo  coloco en negritas */
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    /* Cajas de texto más grandes y con borde gris */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    /*separo el boton  un poco mas arriba */
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    /*Quite el borde  */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    /* Para que se ponga más oscuro cuando le paso el mouse */
+    background-color: #0056b3;
+}
+
+.resultado {
+    /* Aquí va a salir el promedio, lo separo y centro el texto */
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+}
